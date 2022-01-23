@@ -22,7 +22,7 @@ col1 , col2 = st.sidebar.columns(2)
 with col1:
         angle = st.selectbox("Select angle", ['25°','45°','75°'])
 with col2:
-        gun = st.selectbox("Gun: ", [1,2,3,4,5,'Automation'])
+        gun = st.selectbox("Gun: ", ["1","2","3","4","5",'Automation'])
 
 #text area currently not in use
 #data_in = st.sidebar.text_area("Paste in Data")
