@@ -18,7 +18,7 @@ week = st.sidebar.number_input("Enter week: ",min_value = 1, max_value = 52, ste
 #low = st.sidebar.slider("Low limit:",0.01,100.00)         #sliders not used moved to hardcoded
 #high = st.sidebar.slider("High limit: ",0.00, 100.00)     #sliders not used moved to hardcoded
 
-col1 , col2 = st.sidebar.beta_columns(2)
+col1 , col2 = st.sidebar.columns(2)
 with col1:
         angle = st.selectbox("Select angle", ['25°','45°','75°'])
 with col2:
