@@ -38,8 +38,8 @@ st.title("Alignment")
 st.text("Mouse over the point for more information. High/Low limits can be set in the menu.")
 
 
-df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
-#df = pd.read_pickle("lab_df.pk3") #load the saved DataFrame in
+#df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
+df = pd.read_pickle("lab_df.pk3") #load the saved DataFrame in
 
 today = date.today()
 
