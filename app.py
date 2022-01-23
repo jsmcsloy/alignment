@@ -38,8 +38,8 @@ st.title("Alignment")
 st.text("Mouse over the point for more information. High/Low limits can be set in the menu.")
 
 
-df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
-#df = pd.read_pickle("lab_df.pk1") #load the saved DataFrame in
+]#df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
+df = pd.read_pickle("lab_df.pk2") #load the saved DataFrame in
 
 today = date.today()
 
@@ -78,7 +78,7 @@ except:
 if insert == True:
         d ={"week":week, "gun":gun, "angle":angle, "lab":"", "L_value": l_value, "location": location, "date": today}
         df = df.append(d, ignore_index = True)
-        df.to_pickle("lab_df.pk1") # save dataframe
+        df.to_pickle("lab_df.pk2") # save dataframe
         
 
 #draw control charts
