@@ -22,7 +22,7 @@ col1 , col2 = st.sidebar.columns(2)
 with col1:
         angle = st.selectbox("Select angle", ['25°','45°','75°'])
 with col2:
-        gun = st.selectbox("Gun: ", ["1","2","3","4","5",'Automation'])
+        gun = st.selectbox("Gun: ", [1,2,3,4,5,6])
 
 #text area currently not in use
 #data_in = st.sidebar.text_area("Paste in Data")
@@ -48,7 +48,7 @@ today = date.today()
 try:
         pass
         if insert == True:
-            d = data_in
+            d =[] # data_in
             grid_list = d.replace(" ", "")
             grid_list = grid_list[-37:]
             print(grid_list)
