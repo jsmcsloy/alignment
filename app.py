@@ -3,7 +3,7 @@ from pandas import DataFrame, read_csv
 import streamlit as st
 import altair as  alt
 from altair import Chart, X, Y
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from datetime import date
 import base64
 
