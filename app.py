@@ -47,6 +47,7 @@ except:
 
 today = date.today()
 
+total = len(df)
 
 # shortern pasted in  data - currently fails on different length strings
 try:
@@ -82,7 +83,6 @@ except:
 if insert == True:
         d ={"week":week, "gun":gun, "angle":angle, "lab":"", "L_value": l_value, "location": location, "date": today}
         df = df.append(d, ignore_index = True)
-        print(len(d))
         df.to_pickle("lab_df.pk3") # save dataframe
         
 
