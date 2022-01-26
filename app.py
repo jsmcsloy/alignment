@@ -45,6 +45,7 @@ try:
 except:
         print("Error opening pickle")
 
+df= df[0:0]
 today = date.today()
 
 total = len(df)
