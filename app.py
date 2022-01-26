@@ -39,11 +39,11 @@ st.text("Mouse over the point for more information. High/Low limits can be set i
 
 
 df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
-try:
-        df = pd.read_pickle("lab_df.pk4") #load the saved DataFrame in
+#try:
+       # df = pd.read_pickle("lab_df.pk4") #load the saved DataFrame in
 
-except:
-        print("Error opening pickle")
+#except:
+      #  print("Error opening pickle")
 
 today = date.today()
 
