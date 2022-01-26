@@ -40,12 +40,11 @@ st.text("Mouse over the point for more information. High/Low limits can be set i
 
 df = pd.DataFrame(columns =["week", "gun", "angle", "lab", "L_value", "location", "date"])  # used to setup initial df
 try:
-        df = pd.read_pickle("lab_df.pk3") #load the saved DataFrame in
+        df = pd.read_pickle("lab_df.pk4") #load the saved DataFrame in
 
 except:
         print("Error opening pickle")
 
-df = df.iloc[0:0]
 today = date.today()
 
 total = len(df)
@@ -86,7 +85,7 @@ except:
 if insert == True:
         d ={"week":week, "gun":gun, "angle":angle, "lab":"", "L_value": l_value, "location": location, "date": today}
         df = df.append(d, ignore_index = True)
-        df.to_pickle("lab_df.pk3") # save dataframe
+        df.to_pickle("lab_df.pk4") # save dataframe
         
 
 #draw control charts
