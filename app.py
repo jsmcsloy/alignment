@@ -49,7 +49,8 @@ today = date.today()
 
 total = len(df)
 
-st.write(total)
+st.text(total)
+
 # shortern pasted in  data - currently fails on different length strings
 try:
         pass
